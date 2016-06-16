@@ -10,6 +10,8 @@ import UIKit
 
 class PhotoCell: UITableViewCell {
 
+    @IBOutlet weak var photoView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
