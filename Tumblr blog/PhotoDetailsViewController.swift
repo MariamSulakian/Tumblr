@@ -10,6 +10,7 @@ import UIKit
 
 class PhotoDetailsViewController: UIViewController {
 
+    
     @IBOutlet weak var photoView: UIImageView!
     var photoUrl: NSURL?
     
@@ -23,6 +24,14 @@ class PhotoDetailsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+   
+    @IBAction func tap(sender: UITapGestureRecognizer) {
+        print("hello")
+        performSegueWithIdentifier("zoom", sender: self)
+    }
+    
     
 
     /*

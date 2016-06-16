@@ -26,7 +26,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="SRY-Bs-Rqc">
-                                                    <rect key="frame" x="86" y="7" width="202" height="104"/>
+                                                    <rect key="frame" x="53" y="0.0" width="236" height="111"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -60,20 +60,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="gep-WN-dmL">
-                                <rect key="frame" x="40" y="195" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="150" width="375" height="264"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="LZD-HH-lP5" appends="YES" id="gLP-PT-qPz"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="g9Q-h6-UEH"/>
                     <connections>
                         <outlet property="photoView" destination="gep-WN-dmL" id="hka-vU-sBl"/>
+                        <segue destination="nxD-PE-HgL" kind="modal" identifier="zoom" id="zw2-5q-HfW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8B-Kz-6wR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LZD-HH-lP5">
+                    <connections>
+                        <action selector="tap:" destination="PG7-gW-l6R" id="U0z-kI-dCR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1098.5" y="225.5"/>
+            <point key="canvasLocation" x="1144.5" y="209.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ajT-rl-Bu8">
+            <objects>
+                <viewController id="nxD-PE-HgL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WCS-cd-VRO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNe-Rs-2aR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593.5" y="196.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FjW-I6-jC3">
